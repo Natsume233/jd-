@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JD</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript">
+        window.onload = function () {
+            var login = document.getElementById("login");
+            var mask = document.getElementById("mask");
+            var loginbox = document.getElementById("loginbox");
+            var closelb = document.getElementById("close_lb")
+            login.onclick = function () {
+                mask.style.display = "block";
+            }
+            closelb.onclick = function () {
+                mask.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--通栏-->
+    <div id="mask">
+        <div id="loginbox"><span id="close_lb">×</span></div>
+    </div>
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <div class="dt">送至：北京
+                    <i><s>◇</s></i>
+                </div>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="javascript:;" id="login">你好，请登录</a>&nbsp;&nbsp;<a href="" class="col-red">免费注册</a></li>
+                    <li class="space"></li>
+                    <li><a href="">我的订单</a></li>
+                    <li class="space"></li>
+                    <li class="fore"><a href="">我的京东<i><s>◇</s></i></a></li>
+                    <li class="space"></li>
+                    <li><a href="">京东会员</a></li>
+                    <li class="space"></li>
+                    <li><a href="">会员采购</a></li>
+                    <li class="space"></li>
+                    <li class="fore tel_jd"><a href=""><em class="tel"></em>手机京东<i><s>◇</s></i></a></li>
+                    <li class="space"></li>
+                    <li class="fore"><a href="">关注京东<i><s>◇</s></i></a></li>
+                    <li class="space"></li>
+                    <li class="fore"><a href="">客户服务<i><s>◇</s></i></a></li>
+                    <li class="space"></li>
+                    <li class="fore"><a href="">网站导航<i><s>◇</s></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--顶部导航-->
+    <div class="topbanner" id="tpBanner">
+        <div class="w tp">
+            <img src="images/topbanner.jpg" alt="">
+            <a href="javascript:;" class="closebanner" id="tp_close"></a>
+        </div>
+    </div>
+    <script>
+        var tpClose = document.getElementById("tp_close");
+        var tpBanner = document.getElementById("tpBanner");
+        tpClose.onclick = function () {
+            tpBanner.style.display = "none";
+        }
+    </script>
+    <!--搜索栏-->
+    <div class="w clearfix">
+        <div class="logo">
+            <a href="#"><img src="images/jdlogo.png" alt=""></a>
+        </div>
+        <div class="search">
+            <input type="text" name="" id="txt" value="啤酒">
+            <button class="btn"><i>搜索</i></button>
+        </div>
+        <script>
+            var txt = document.getElementById("txt");
+            txt.onfocus = function () {
+                if(txt.value == "啤酒"){
+                    txt.value = "";
+                    txt.style.color = "rgb(51, 51, 51)";
+                }
+            }
+            txt.onblur = function () {
+                if(txt.value == ""){
+                    txt.value = "啤酒";
+                    txt.style.color = "rgb(153, 153, 153)";
+                }
+            }
+        </script>
+        <div class="car"><a href="#">我的购物车</a>
+            <span class="icon1"></span>
+            <span class="icon2">></span>
+            <span class="icon3">0</span>
+        </div>
+        <div class="hotwords">
+            <a href="#" class="col-red">七夕礼品</a>
+            <a href="#">消暑神器</a>
+            <a href="#">农用物资</a>
+            <a href="#">鲜花99元</a>
+            <a href="#">电影京券</a>
+            <a href="#">tcl空调</a>
+            <a href="#">眼镜</a>
+            <a href="#">小米电脑</a>
+            <a href="#">联想小新</a>
+        </div>
+    </div>
+    <!--navbar-->
+    <div class="jd_nav">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt"><a href="">全部商品类</a></div>
+                <div class="dd">
+                    <div class="items">
+                        <h3>家用电器</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>手机、数码、京东通信</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>电脑、办公</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>家居、家具、家装、厨具</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>男装、女装、童装、内衣</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>个护化妆、清洁用具、宠物</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>鞋靴、箱包、珠宝、奢侈品</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>运动户外、钟表</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>汽车、汽车用品</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>母婴、玩具乐器</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>食品、酒类、生鲜、特产</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>医药保健</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>图书、音像、电子书</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>彩票、旅行、充值、票务</h3><span>></span>
+                    </div>
+                    <div class="items">
+                        <h3>理财、众筹、白条、保险</h3><span>></span>
+                    </div>
+                </div>
+            </div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">京东超市</a></li>
+                    <li><a href="#">生鲜</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                    <li><a href="#">金融</a></li>
+                </ul>
+
+            </div>
+            <div class="champ"><a href="#"></a></div>
+        </div>
+    </div>
+    <!--banner-->
+    <div class="banner">
+        <a href="#"></a>
+    </div>
+    <!--side slider news-->
+    <div class="w main clearfix">
+        <div class="slider" id="slide">
+            <a href="#"><img src="images/slid2.jpg" alt="" id="pic"></a>
+            <ul class="circle" id="ul">
+                <li id="li1">1</li>
+                <li class="current" id="li2">2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+            <div class="arrow" id="arr">
+                <div class="arrow_l"><</div>
+                <div class="arrow_r">></div>
+            </div>
+            <script>
+                var slide = document.getElementById("slide");
+                var arr = document.getElementById("arr");
+                slide.onmouseover = function () {
+                    arr.style.display = "block";
+                }
+                slide.onmouseout = function () {
+                    arr.style.display = "none";
+                }
+
+                var li1 = document.getElementById("li1");
+                var li2 = document.getElementById("li2");
+                var pic = document.getElementById("pic")
+                li1.onmouseover = function () {
+                    pic.src = "images/slid1.jpg";
+                }
+                li2.onmouseover = function () {
+                    pic.src = "images/slid2.jpg";
+                }
+            </script>
+        </div>
+        <div class="news">
+            <div class="jd_news">
+                <div class="dt">
+                    <h2>京东快报</h2>
+                    <a href="#">更多&nbsp></a>
+                </div>
+                <div class="dd">
+                    <ul>
+                        <li><a href="#"><span>[特惠]</span>【七夕特价】好礼低至9.9元！</a></li>
+                        <li><a href="#"><span>[公告]</span>广东福建因台风影响配送延迟</a><li>
+                        <li><a href="#"><span>[特惠]</span>京东超市男人狂欢季</a></li>
+                        <li><a href="#"><span>[公告]</span>丹寨馆百日庆 传承文化邀你赏</a></li>
+                        <li><a href="#"><span>[特惠]</span>夏日么么哒，礼盒第二件半价</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="services" id="iconsprite">
+                <ul>
+                    <li><a href="#"><i></i><span>话费</span></a></li>
+                    <li><a href="#"><i></i><span>机票</span></a></li>
+                    <li><a href="#"><i></i><span>电影票</span></a></li>
+                    <li><a href="#"><i></i><span>游戏</span></a></li>
+                    <li><a href="#"><i></i><span>彩票</span></a></li>
+                    <li><a href="#"><i></i><span>加油卡</span></a></li>
+                    <li><a href="#" class="jian"><i></i><span>酒店</span></a></li>
+                    <li><a href="#"><i></i><span>火车票</span></a></li>
+                    <li><a href="#"><i></i><span>众筹</span></a></li>
+                    <li><a href="#"><i></i><span>理财</span></a></li>
+                    <li><a href="#"><i></i><span>礼品卡</span></a></li>
+                    <li><a href="#"><i></i><span>白条</span></a></li>
+                </ul>
+                <script>
+                    var is = document.getElementById("iconsprite").getElementsByTagName("i");
+                    for(var i = 0;i <is.length; i++){
+                        is[i].style.backgroundPosition = "0 "+(-i*25)+"px";
+                    }
+                </script>
+            </div>
+            <img src="images/qixi.jpg" alt="">
+        </div>
+    </div>
+    <!--festival activity-->
+    <div class="w todays clearfix">
+        <div class="today">
+            <div class="commend">
+            </div>
+            <div class="goods">
+                <i class="gl"><</i>
+                <ul>
+                    <li><a href="#"><img src="images/today1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/today2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/today3.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/today4.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/today5.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/today6.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/today7.jpg" alt=""></a></li>
+                </ul>
+                <i class="gr">></i>
+            </div>
+        </div>
+    </div>
+    <!--guess what you like-->
+    <div class="w guess">
+        <div class="gt">
+            <h2>猜你喜欢</h2>
+            <a href="" class="gchange">换一批</a>
+        </div>
+        <div class="gb">
+            <div class="space"><i></i></div>
+            <ul>
+                <li><div class="g-img">
+                    <img src="images/guess1.jpg" alt="">
+                </div>
+                    <div class="g-info b1">
+                        <div class="g-name">
+                            【京东超市】蒙牛 纯甄 常温酸牛奶 200g*24 家庭装
+                        </div>
+                        <div class="g-price">
+                            <i>￥</i>92.90
+                        </div>
+                    </div>
+                </li>
+                <li><div class="g-img">
+                    <img src="images/guess2.jpg" alt="">
+                </div>
+                    <div class="g-info">
+                        <div class="g-name">
+                            九阳（Joyoung）电饭煲多功能智能电饭锅3L JYF-30FE08
+                        </div>
+                        <div class="g-price">
+                            <i>￥</i>159.00
+                        </div>
+                    </div>
+                </li>
+                <li><div class="g-img">
+                    <img src="images/guess3.jpg" alt="">
+                </div>
+                    <div class="g-info">
+                        <div class="g-name">
+                            中礼鲜花速递 33枝红玫瑰花 全国同城鲜花花店送花【指定日期送达】生日鲜花快递配送上门
+                        </div>
+                        <div class="g-price">
+                            <i>￥</i>268.00
+                        </div>
+                    </div>
+                </li>
+                <li><div class="g-img">
+                    <img src="images/guess4.jpg" alt="">
+                </div>
+                    <div class="g-info">
+                        <div class="g-name">
+                            魅族 EP-21HD耳机
+                        </div>
+                        <div class="g-price">
+                            <i>￥</i>89.00
+                        </div>
+                    </div>
+                </li>
+                <li><div class="g-img">
+                    <img src="images/guess5.jpg" alt="">
+                </div>
+                    <div class="g-info">
+                        <div class="g-name">
+                            【京东超市】沙宣 VS 修护水养500ml洗发水*2+润发乳400ml送洗发露50ml*3+润发乳50ml*2
+                        </div>
+                        <div class="g-price">
+                            <i>￥</i>119.00
+                        </div>
+                    </div>
+                </li>
+                <li><div class="g-img">
+                    <img src="images/guess6.jpg" alt="">
+                </div>
+                    <div class="g-info">
+                        <div class="g-name">
+                            西域美农 零食特产 红枣夹核桃 美仁枣268g
+                        </div>
+                        <div class="g-price">
+                            <i>￥</i>39.00
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--floor1 clothes-->
+    <div class="w floor clearfix">
+        <div class="clothes">
+            <div class="ct">
+                <h2><i>1F</i>服装鞋包</h2>
+                <ul id="links">
+                    <li class="bor" id="lisp"><a href="#">大牌</a><span></span></li>
+                    <li><a href="#">男装</a><span></span></li>
+                    <li><a href="#">女装</a><span></span></li>
+                    <li><a href="#">鞋靴</a><span></span></li>
+                    <li><a href="#">箱包</a><span></span></li>
+                    <li><a href="#">内衣配饰</a><span></span></li>
+                    <li><a href="#">珠宝首饰</a><span></span></li>
+                    <li><a href="#">奢侈礼品</a><span></span></li>
+                    <li><a href="#">奢华腕表</a></li>
+                </ul>
+            </div>
+            <div class="cb" id="cb">
+                <div class="show"><p></p><img src="images/tab1.png" alt=""></div>
+                <div><p></p><img src="images/tab2.png" alt=""></div>
+                <div><p></p><img src="images/tab3.png" alt=""></div>
+                <div><p></p><img src="images/tab4.png" alt=""></div>
+                <div><p></p><img src="images/tab5.png" alt=""></div>
+                <div><p></p><img src="images/tab6.png" alt=""></div>
+                <div><p></p><img src="images/tab7.png" alt=""></div>
+                <div><p></p><img src="images/tab8.png" alt=""></div>
+                <div><p></p><img src="images/tab9.png" alt=""></div>
+            </div>
+            <script>
+                var links = document.getElementById("links").getElementsByTagName("li");
+                var divs = document.getElementById("cb").getElementsByTagName("div");
+                for(var i = 0; i<links.length; i++){
+                    links[i].index = i;
+                    links[i].onmouseover = function () {
+                        for(var j = 0; j<divs.length; j++){
+                            links[j].className = "";
+                            divs[j].className = "";
+                        }
+                        this.className = "bor";
+                        divs[this.index].className = "show";
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <!--页面底部-->
+    <div class="jd_footer">
+        <div class="service clearfix">
+            <div class="slogen">
+                <span class="item slogen1"><img src="images/item1.png" alt=""></span>
+                <span class="item slogen2"><img src="images/item2.png" alt=""></span>
+                <span class="item slogen3"><img src="images/item3.png" alt=""></span>
+                <span class="item slogen4"><img src="images/item4.png" alt=""></span>
+            </div>
+            <div class="w">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">会员介绍</a></dd>
+                    <dd><a href="">生活旅行/团购</a></dd>
+                    <dd><a href="">常见问题</a></dd>
+                    <dd><a href="">大家电</a></dd>
+                    <dd><a href="">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="">上门自提</a></dd>
+                    <dd><a href="">211限时送达</a></dd>
+                    <dd><a href="">配送服务查询</a></dd>
+                    <dd><a href="">配送费收取标准</a></dd>
+                    <dd><a href="">海外配送</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="">货到付款</a></dd>
+                    <dd><a href="">在线支付</a></dd>
+                    <dd><a href="">分期付款</a></dd>
+                    <dd><a href="">邮局汇款</a></dd>
+                    <dd><a href="">公司转账</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="">售后政策</a></dd>
+                    <dd><a href="">价格保护</a></dd>
+                    <dd><a href="">退款说明</a></dd>
+                    <dd><a href="">返修/退换货</a></dd>
+                    <dd><a href="">取消订单</a></dd>
+                </dl>
+                <dl class="lastdl">
+                    <dt>特色服务</dt>
+                    <dd><a href="">夺宝岛</a></dd>
+                    <dd><a href="">DIY装机</a></dd>
+                    <dd><a href="">延保服务</a></dd>
+                    <dd><a href="">京东E卡</a></dd>
+                    <dd><a href="">京东通信</a></dd>
+                </dl>
+                <div class="coverage">
+                    <div class="dt">京东自营覆盖区县</div>
+                    <div class="dd">京东已向全国2649个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</div>
+                    <p><a href="">查看详情></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="w">
+            <div class="foot">
+                <div class="links">
+                    <a href="">关于我们</a>|
+                    <a href="">联系我们</a>|
+                    <a href="">联系客服</a>|
+                    <a href="">商家入驻</a>|
+                    <a href="">营销中心</a>|
+                    <a href="">营销中心</a>|
+                    <a href="">友情链接</a>|
+                    <a href="">销售联盟</a>|
+                    <a href="">京东社区</a>|
+                    <a href="">京东公益</a>|
+                    <a href="">English Site</a>|
+                    <a href="">Contact Us</a>
+                </div>
+                <div class="copyright"> 京公网安备 11000002000088号  |  京ICP证070359号  |  互联网药品信息服务资格证编号(京)-经营性-2014-0008  |  新出发京零 字第大120007号<br/>
+                    互联网出版许可证编号新出网证(京)字150号  |  出版物经营许可证  |  网络文化经营许可证京网文[2014]2148-348号  |  违法和不良信息举报电话：4006561155<br/>
+                    Copyright © 2004 - 2016  京东JD.com 版权所有  |  消费者维权热线：4006067733<br/>
+                    京东旗下网站：京东钱包</div>
+                <div class="message">
+                    <a href=""><img src="images/m1.png" alt=""></a>
+                    <a href=""><img src="images/m2.png" alt=""></a>
+                    <a href=""><img src="images/m3.jpg" alt=""></a>
+                    <a href=""><img src="images/m4.png" alt=""></a>
+                    <a href=""><img src="images/m5.jpg" alt=""></a>
+                    <a href=""><img src="images/m6.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

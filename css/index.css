@@ -1,0 +1,307 @@
+@charset "UTF-8";
+.banner{
+    position: relative;
+}
+.banner a{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height:666px;
+    background: url(../images/banner.jpg) no-repeat top center;
+}
+.main{
+    position: relative;
+}
+.slider{
+    float: left;
+    margin: 4px 0 0 220px;
+    width: 730px;
+    position: relative;
+}
+.circle{
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    margin-left: -60px;
+}
+.circle li{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    margin:0 1px;
+    color: #FFFFFF;
+    background-color: #3E3E3E;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.circle li.current{
+    background-color: #B61B1F;
+}
+.arrow{
+    display: none;
+}
+.arrow_l,.arrow_r,.goods .gl,.goods .gr{
+    position: absolute;
+    top:50%;
+    margin-top: -31px;
+    width: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    font: 700 22px/62px "SimSun";
+    background: rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.arrow_l,.goods .gl{
+    left: 0;
+}
+.arrow_r,.goods .gr{
+    right:0;
+}
+.arrow_l:hover,.arrow_r:hover,.goods .gl:hover,.goods .gr:hover{
+    background: rgba(0,0,0,.3);
+}
+.news{
+    float: right;
+    margin-top: 4px;
+    width: 248px;
+    border: 1px solid #E3E3E3;
+}
+.news .jd_news{
+    padding:0 15px;
+}
+.jd_news .dt{
+    height: 33px;
+    border-bottom: 1px dotted #E8E8E7;
+}
+.jd_news h2{
+    float: left;
+    font: 400 16px/32px "microsoft yahei";
+}
+.jd_news .dt a{
+    float: right;
+    font:400 12px/32px "SimSun";
+}
+.jd_news .dd li a{
+    font:400 12px/25px "SimSun";
+}
+.jd_news .dd li span{
+    font-weight: 700;
+    margin-right: 5px;
+}
+.news .services{
+    width: 248px;
+    overflow: hidden;
+}
+.news .services ul{
+    margin: 5px 0;
+    width: 252px;
+    border-top: 1px solid #E8E8E7;
+}
+.news .services li{
+    float: left;
+    margin: -1px 0 0 -1px;
+    width: 62px;
+    height: 70px;
+    border: 1px solid #E8E8E7;
+}
+.news .services a{
+    display: block;
+    text-align: center;
+    padding-top: 47px;
+    position: relative;
+}
+.services i{
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/sicon.png);
+}
+.services .jian{
+    background: url(../images/jian.png)no-repeat right top;
+}
+
+
+
+/*festival activities*/
+.todays{
+    position: relative;
+}
+.today{
+    margin: 10px 0 28px 0;
+}
+.commend{
+    float: left;
+    width: 210px;
+    height: 151px;
+    background: url(../images/commend.png) no-repeat -213px -136px;
+}
+.goods{
+    float: left;
+    width: 1000px;
+    height: 151px;
+    overflow: hidden;
+    position: relative;
+}
+.goods ul{
+    width: 500%;
+}
+.goods li{
+    float: left;
+    margin-right: 1px;
+}
+
+/*guess what you like*/
+.guess{
+    height: 289px;
+    margin-top: 40px;
+    background: url(../images/commend.png) no-repeat 85px -90px;
+}
+.guess .gt{
+    height: 30px;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+.guess .gt h2,.floor .clothes .ct h2{
+    float: left;
+    display: inline;
+    color: #3E3E3E;
+    font: 400 20px/30px "microsoft yahei";
+}
+.gt .gchange{
+    float: right;
+    padding-right: 25px;
+    display: inline-block;
+    margin-top: 8px;
+    background: url(../images/commend.png) no-repeat -310px -5px;
+}
+.guess .gb{
+    position: relative;
+    height: 210px;
+    padding: 10px 0;
+    border: 1px solid #E5E5E5;
+    border-top: 1px solid #CFC3C3;
+    background-color: #fff;
+}
+.gb .space i{
+    width: 365px;
+    height: 5px;
+    overflow: hidden;
+    position: absolute;
+    right: -1px;
+    top: -3px;
+    background: #b72323 url(../images/commend.png) no-repeat 0 -124px;
+}
+.gb ul{
+    list-style: none;
+}
+.gb li{
+    float: left;
+    width: 201px;
+    height: 130px;
+    text-align: center;
+}
+.gb .g-info{
+    padding:0 10px 0 10px;
+    border-left: 1px solid #CFC3C3;
+}
+.gb .g-info.b1{
+    border: 0 none;
+}
+.gb .g-name{
+    width: 125px;
+    height: 39px;
+    margin: 10px 25px 0 25px;
+    overflow: hidden;
+}
+.gb .g-price{
+    margin-top: 10px;
+    color: #b51d1a;
+    font-size: 18px;
+}
+/*floor1 clothes*/
+.floor{
+    margin: 30px auto;
+    position: relative;
+}
+.floor .clothes .ct{
+    height: 35px;
+}
+.floor .clothes .ct h2{
+    position: relative;
+    padding-left: 40px;
+}
+.floor .clothes .ct i{
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 31px;
+    height: 25px;
+    padding-left: 3px;
+    color: #FFFFFF;
+    font: 400 13px/25px "microsoft yahei";
+    background: url(../images/floor.png) no-repeat 0 0;
+}
+.floor .clothes .ct ul{
+    list-style-type: none;
+    float: right;
+    height: 33px;
+    border: 1px solid #ccc;
+    border-bottom: 0 none;
+}
+.floor .clothes .ct li{
+    float: left;
+    display: inline;
+    position: relative;
+}
+.floor .clothes .ct li a{
+    position: relative;
+    padding: 0 16px;
+    border-left-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+    font:400 13px/33px "SimSun";
+}
+.ct li span{
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    right: -1px;
+    width: 1px;
+    height: 12px;
+    background-color: #c81623;
+}
+.floor .clothes .cb div{
+    border: 1px solid #E5E5E5;
+    border-top: 1px solid #b51d1a;
+    display: none;
+}
+.floor .clothes .ct li.bor{
+    margin-top: -1px;
+    background-color: #FFFFFF;
+    border-left: solid 1px #c81623;
+    border-right: solid 1px #c81623;
+    border-top: solid 3px #c81623;
+}
+.floor .clothes .cb .show{
+    display: block;
+}
+.floor .clothes .cb{
+    height: 466px;
+    border: 1px solid #c81623;
+    border-top: 0 none;
+}
+.floor .clothes .cb p{
+    float: left;
+    width: 330px;
+    height: 465px;
+    background: url(../images/left.png) no-repeat center center;
+}
+.floor .clothes .cb img{
+    float: left;
+    width: 875px;
+    height: 465px;
+}
